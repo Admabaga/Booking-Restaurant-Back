@@ -6,18 +6,19 @@ import jakarta.persistence.*;
 public class Restaurant {
 	@Id
 	@GeneratedValue
-	private Long id;
-	private String restaurantName;
+	private Integer id;
+	private String name;
 	private String description;
+	private String address;
 	private String image;
-	
+		
 	public Restaurant() {
 		
 	}
 	
-	public Restaurant(Long id, String restaurantName, String description, String image) {
+	public Restaurant(Long id, String name, String description, String image) {
 		this.id = id;
-		this.restaurantName = restaurantName;
+		this.name = name;
 		this.description = description;
 		this.image = image;
 	}
