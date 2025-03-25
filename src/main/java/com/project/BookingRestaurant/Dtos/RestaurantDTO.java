@@ -1,27 +1,15 @@
-package com.project.BookingRestaurant.Entitys;
+package com.project.BookingRestaurant.Dtos;
 
-import jakarta.persistence.*;
+import lombok.Data;
 
-@Entity
-public class Restaurant {
-	@Id
-	@GeneratedValue
+@Data
+public class RestaurantDTO {
 	private Integer id;
 	private String name;
 	private String description;
 	private String address;
 	private String image;
-		
-	public Restaurant() {
-		
-	}
 	
-	public Restaurant(Integer id, String name, String description, String image) {
-		this.id = id;
-		this.name = name;
-		this.description = description;
-		this.image = image;
-	}
 	
 	public Integer getId() {
 		return this.id;
@@ -54,7 +42,6 @@ public class Restaurant {
 	public void setImage(String image) {
 		this.image = image;
 	}
-	
 	public String getAddress() {
 		return this.address;
 	}
@@ -62,4 +49,5 @@ public class Restaurant {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
 }
