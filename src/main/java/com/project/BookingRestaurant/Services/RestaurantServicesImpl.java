@@ -2,11 +2,10 @@ package com.project.BookingRestaurant.Services;
 
 import org.springframework.stereotype.Service;
 
+import com.project.BookingRestaurant.Converters.RestaurantConverter;
 import com.project.BookingRestaurant.Dtos.RestaurantDTO;
 import com.project.BookingRestaurant.Entitys.Restaurant;
 import com.project.BookingRestaurant.Repositorys.RestaurantRepository;
-
-import Converters.RestaurantConverter;
 
 @Service
 public class RestaurantServicesImpl implements RestaurantServices {

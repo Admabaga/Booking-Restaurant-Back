@@ -1,4 +1,4 @@
-package Converters;
+package com.project.BookingRestaurant.Converters;
 
 import com.project.BookingRestaurant.Dtos.RestaurantDTO;
 import com.project.BookingRestaurant.Entitys.Restaurant;
